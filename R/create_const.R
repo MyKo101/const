@@ -15,10 +15,10 @@
 #' @export
 
 `:=` <- function(x,value){
-  x_str <- deparse1(substitute(x))
+  x_str <- deparse(substitute(x))
   force(value)
   if(exists(x_str,envir=parent.frame(),inherits = FALSE) && bindingIsLocked(x_str,parent.frame())){
-    stop(paste0(x_str," := ",deparse1(substitute(value)),"\nCannot re-assign constant."),call.=FALSE)
+    stop(paste0(x_str," := ",deparse(substitute(value)),"\nCannot re-assign constant."),call.=FALSE)
   } else invisible(const(x_str,value,parent.frame()))
 }
 
