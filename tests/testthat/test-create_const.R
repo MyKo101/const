@@ -35,3 +35,16 @@ test_that("constant can be removed",{
   expect_invisible(x := 3)
 
 })
+
+test_that("ops on const strips const",{
+
+  x := 2
+  y := 3
+
+  z := TRUE
+
+  expect_false(inherits(x + y,"const"))
+  expect_false(inherits(-x,"const"))
+  expect_false(inherits(!z,"const"))
+
+})

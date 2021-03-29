@@ -28,11 +28,21 @@ const <- function(name,value,env){
   value
 }
 
-#' @export
-print.const <- function(x,...){
-  cat("\033[33m<const>\n\033[39m")
-  x2 <- x
-  class(x2) <- class(x)[-which(class(x) == "const")]
-  print(x2)
+deconst <- function(x){
+  class(x) <- class(x)[class(x) != "const"]
+  x
 }
 
+#' @export
+#' @method print const
+print.const <- function(x,...){
+  cat("\033[33m<const>\n\033[39m")
+  print(deconst(x))
+}
+
+#' @export
+#' @method Ops const
+Ops.const <- function(e1,e2){
+  if(missing(e2)) eval.parent(call(.Generic,deconst(e1))) else
+    eval.parent(call(.Generic,deconst(e1),deconst(e2)))
+}
