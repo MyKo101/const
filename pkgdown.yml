@@ -1,0 +1,9 @@
+pandoc: 2.7.3
+pkgdown: 1.6.1
+pkgdown_sha: ~
+articles: {}
+last_built: 2021-03-29T21:31Z
+urls:
+  reference: michaelbarrowman.co.uk/const/reference
+  article: michaelbarrowman.co.uk/const/articles
+
