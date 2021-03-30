@@ -36,6 +36,13 @@ test_that("constant can be removed",{
 
 })
 
+test_that("const prints properly",{
+
+  x:=2
+  expect_output(print(x),regexp="(.*?)<const>(.*?)\\n(.*?)")
+
+})
+
 test_that("ops on const strips const",{
 
   x := 2

@@ -15,3 +15,13 @@ x := value
 Assign a value to a constant. Once a constant has been
 created, it cannot be re-assigned.
 }
+\examples{
+x := 2
+x
+
+y := 3
+
+x + y
+
+
+}

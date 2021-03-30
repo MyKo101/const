@@ -12,6 +12,15 @@
 #' @param value
 #' a value to be assigned to x.
 #'
+#' @examples
+#' x := 2
+#' x
+#'
+#' y := 3
+#'
+#' x + y
+#'
+#'
 #' @export
 
 `:=` <- function(x,value){

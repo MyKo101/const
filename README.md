@@ -6,6 +6,8 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/MyKo101/const/workflows/R-CMD-check/badge.svg)](https://github.com/MyKo101/const/actions)
+[![Codecov test
+coverage](https://codecov.io/gh/MyKo101/const/branch/master/graph/badge.svg)](https://codecov.io/gh/MyKo101/const?branch=master)
 <!-- badges: end -->
 
 The goal of const is to allow users to create constants, rather than
@@ -38,6 +40,7 @@ To create a constant within R, you can use the `:=` assignment operator
 
 ``` r
 library(const)
+#> Warning: package 'const' was built under R version 4.1.0
 
 x := "hello world"
 x
