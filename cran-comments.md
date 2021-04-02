@@ -1,3 +1,8 @@
+## Resubmission
+This is a resubmission. In this version, I have:
+
+* Fixed a URI link in the README.Rmd and README.md file to include 'https://'
+
 ## Test environments
 
 * local R installation on Windows, R devel

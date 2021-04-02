@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# const <a href='michaelbarrowman.co.uk/const'><img src='man/figures/logo.png' align="right" height="139" /></a>
+# const <a href='https://www.michaelbarrowman.co.uk/const/'><img src='man/figures/logo.png' align="right" height="139" /></a>
 
 <!-- badges: start -->
 
